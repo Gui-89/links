@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+body {
+  background-color: #42a2c3;
+  font-family: 'Ubuntu', sem serifa;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+h3 {
+  margin: 0 auto;
+  width: 60%;
+  margin-top: -1rem;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Ubuntu', sem serifa;
+}
+
+.logo {
+  width: 100%;
+  margin: 0.7rem auto;
+}
+.logo .logo-img {
+  max-width: 100%;
+}
+
+.img-background {
+  position: relative;
+  height: 100vh;
+}
+
+.bg-img {
+  position: absolute;
+  bottom: 5%;
+  z-index: 9;
+}
+
+.bg-img img {
+  max-width: 141%;
+}
+
+.greeting {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+  top: 23rem;
+}
+
+.greeting .title {
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+.linktree {
+  margin-top: 23rem;
+  z-index: 99;
+  position: relative;
+}
+
+.linktree-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linktree-item {
+  width: 80%;
+  text-align: center;
+  background-color: #083050;
+  margin-bottom: 0.8rem;
+  opacity: 0.8;
+}
+.linktree-item:hover {
+  background-color: transparent;
+  outline: 2px solid #083050;
+}
+
+.linktree-item a {
+  display: list-item;
+  padding: 0.7rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.linktree-item:hover a {
+  color: #083050;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    align-items: center;
+  }
+  .bg-img {
+    width: 148%;
+    left: -60%;
+  }
+  h3 {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: -1rem;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Ubuntu', sem serifa;
+  }
+
+  .greeting {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+    top: 21.5rem;
+  }
+  .greeting .title {
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+
+  .subtitle {
+    font-size: 25px;
+  }
+  .linktree {
+    margin-top: 21.5rem;
+    z-index: 99;
+    position: relative;
+  }
+  .linktree-item {
+    width: 80%;
+    text-align: center;
+    background-color: #083050;
+    margin-bottom: 0.6rem;
+    opacity: 0.8;
+  }
+}
